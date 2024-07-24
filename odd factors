@@ -1,0 +1,6 @@
+# Python Program for Number of elements with odd factors in a given range
+number_1 = int(input("Enter your First Number: "))
+number_2 = int(input("Enter your Last Number: "))
+for i in range(number_1,number_2 + 1):
+    if(i % 2 != 0):
+        print(i)
