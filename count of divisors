@@ -1,0 +1,12 @@
+# Python Program to Check if a count of divisors is even or odd
+import math
+def Divisor(value):
+    if value < 1:
+        return
+    value_1 = int(math.sqrt(value))
+    if value_1 ** 2 == value:
+        print("This Count of Divisor is: Odd")
+    else:
+        print("This Count of Divisor is: Even")
+if __name__ == '__main__':
+    Divisor(int(input("Enter the Divisor: ")))
