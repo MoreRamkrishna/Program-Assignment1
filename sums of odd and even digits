@@ -1,20 +1,16 @@
 # Python Program to find Difference between sums of odd and even digits
-n = int(input('Enter the digit number:'))
-num_1 = 0
-num_2 = 0
-value = True
-while(n > 0):
-	digit = n % 10
-	if(value):
-		num_1 += digit
-	else:
-		num_2 += digit
-	if(value):
-		value = False
-	else:
-		value = True
-	n = int(n / 10)
-if(num_1 - num_2 == 0):
-    print("Yes")
-else:
-	print("No")
+number = int(input("Enter the number: "))
+odd_number = 0
+even_number = 0
+
+for i in str(number):
+ i = int(i)
+ if i % 2 == 0:
+  even_number += i
+ else:
+  odd_number += i
+
+difference = odd_number - even_number
+print("Sum of Odd Number is:",odd_number)
+print("Sum of Even Number is: ",even_number)
+print("Difference between Sum of Odd Number and Even Number is: ",difference)
