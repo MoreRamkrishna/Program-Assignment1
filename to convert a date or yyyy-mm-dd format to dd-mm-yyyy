@@ -1,0 +1,12 @@
+def convert_date_format(date_str):
+    # Split the input date by '-'
+    year, month, day = date_str.split('-')
+    
+    # Rearrange the date to dd-mm-yyyy format
+    return f"{day}-{month}-{year}"
+
+# Example usage
+input_date = "2024-10-02"
+converted_date = convert_date_format(input_date)
+print(f"Original date: {input_date}")
+print(f"Converted date: {converted_date}")
