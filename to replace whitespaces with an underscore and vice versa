@@ -1,0 +1,11 @@
+def replace_spaces_and_underscores(text):
+    # Replace whitespaces with underscores and underscores with whitespaces
+    result = text.replace(' ', '_').replace('_', ' ')
+    
+    return result
+
+# Example usage
+input_text = "Hello World_This is a test_string"
+output_text = replace_spaces_and_underscores(input_text)
+print(f"Original text: {input_text}")
+print(f"Modified text: {output_text}")
